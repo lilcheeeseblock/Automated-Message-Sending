@@ -1,0 +1,21 @@
+import pyautogui as pa
+import time
+import os
+
+os.startfile("C:\\Users\kicks\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Discord Inc\Discord.lnk")
+time.sleep(10)
+pa.press('win')
+time.sleep(1)
+pa.typewrite('discord')
+time.sleep(1.5)
+pa.press('enter')
+time.sleep(3)
+pa.hotkey('ctrl','t')
+time.sleep(1.5)
+pa.typewrite('_grievous')
+time.sleep(1.5)
+pa.press('enter')
+time.sleep(1.5)
+pa.typewrite('gym today at 8?')
+time.sleep(0.5)
+pa.press('enter')

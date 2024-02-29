@@ -1,1 +1,1 @@
-This is quite  a simple code I made in my spare time because I got bored of txting my friend reminding him to go to the gym and him saying no. Now I just run this code, he receives the text and I dont have to think about it.
+This is quite  a simple code I made in my spare time because I got bored of texting my friend reminding him to go to the gym and him saying no. Now I just run this code, he receives the text and I don't have to think about it.

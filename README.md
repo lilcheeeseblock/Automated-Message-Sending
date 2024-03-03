@@ -1,1 +1,1 @@
-This is quite  a simple code I made in my spare time because I got bored of texting my friend reminding him to go to the gym and him saying no. Now I just run this code, he receives the text and I don't have to think about it.
+This is quite a simple automated code I made in my spare time because I got bored of texting my friend reminding him to go to the gym and him saying no. The idea is that the code is put into the startup folder and runs in the background with minimal strain on the device. At any point, the code can still be manually shut down or disrupted if necessary.

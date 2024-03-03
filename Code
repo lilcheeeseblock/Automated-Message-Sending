@@ -1,24 +1,29 @@
 import pyautogui as pa
 import time
 import os
+import datetime
 
-#opens discord and waits for it to start
-pa.press('win')
-time.sleep(1)
-pa.typewrite('discord')
-time.sleep(1.5)
-pa.press('enter')
-time.sleep(12)
+#shorthand for datetime library
+today = datetime.datetime.today()
+now = datetime.datetime.now()
 
-#uses discord shortcut 'control + t' to search for user
-pa.hotkey('ctrl','t')
-time.sleep(1.5)
-pa.typewrite('username')
-time.sleep(1.5)
-pa.press('enter')
-time.sleep(1.5)
-
-#types selected msg and sends
-pa.typewrite('chosen msg')
-time.sleep(0.5)
-pa.press('enter')
+#the loops may seem redundant but it keeps it running and checking for time, if the desired window for the msg to be sent occurs, the msg will be sent and the loop will disrupt
+while True:
+    if today.weekday() == 0 or today.weekday() == 2 or today.weekday() == 4:
+        if 16 <= now.hour <= 18:
+            pa.press('win')
+            time.sleep(1)
+            pa.typewrite('discord')
+            time.sleep(1.5)
+            pa.press('enter')
+            time.sleep(1.5)
+            pa.hotkey('ctrl','t')
+            time.sleep(1.5)
+            pa.typewrite('username')
+            time.sleep(1.5)
+            pa.press('enter')
+            time.sleep(1.5)
+            pa.typewrite('desired msg')
+            time.sleep(0.5)
+            pa.press('enter')
+            break
